@@ -76,6 +76,28 @@
     </div>
 
 
+
+    <!-- Trying to do my own carousel -->
+
+    <div>
+      <div class="product-small-images">
+
+      <div index="0"><img src="img/manny.png"/></div>
+    </div>
+
+      $('.product-small-images').slick({
+      slidesToShow: 3,
+      slidesToScroll: 1,
+      asNavFor: '.product-big-image',
+      centerMode: true,
+      focusOnSelect: true
+      });
+
+
+    </div>
+
+
+
     <!-- Carousel
     ================================================== -->
     <div id="myCarousel" class="carousel slide" data-ride="carousel">
