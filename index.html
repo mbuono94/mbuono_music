@@ -5,11 +5,13 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-  <meta name="description" content="">
-  <meta name="author" content="">
-  <link rel="icon" href="favicon.ico">
+  <meta name="description" content="Michael Buono is a singer / songwriter from Oakland California. He is releasing an 5 song EP, Slow it Down, in December.">
+  <meta name="author" content="Michael Buono">
+  <link rel='shortcut icon' href='favicon.ico' type='image/x-icon'>
 
-  <title>Michael Buono</title>
+  <meta <link rel="icon" href="(URL of the favicon)" type="image/x-icon"> <link rel="shortcut icon" href="(URL of the favicon)" type="image/x-icon">
+
+  <title>Michael Buono Music: Singer/Songwriter based in Oakland, California</title>
 
   <!-- Bootstrap core CSS -->
   <link href="dist/css/bootstrap.min.css" rel="stylesheet">
@@ -19,9 +21,16 @@
 
 
   <link rel="stylesheet" href="font_awesome/css/font-awesome.min.css">
+
+
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
   <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
   <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
   <script src="assets/js/ie-emulation-modes-warning.js"></script>
+
+
 
   <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
@@ -35,11 +44,17 @@
       <link rel="stylesheet" type="text/css" href="slick/slick.css"/>
       <link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
 
+<script>
+    $(document).ready(function() {
+        $('a[href="' + this.location.pathname + '"]').parent().addClass('active');
+    });
+</script>
 
 
     </head>
     <!-- Fixed navbar -->
     <nav class="navbar navbar-default navbar-fixed-top">
+      
       <div class="container">
         <div class="navbar-header">
           <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
@@ -52,7 +67,9 @@
         </div>
         <div id="navbar" class="navbar-collapse collapse">
           <ul class="nav navbar-nav">
-            <li class="active"><a href="#">Home</a></li>
+            <!-- We dont want it active cause we cant make others active -->
+            <!-- <li class="active"><a href="#">Home</a></li> -->
+            <li><a href="#">Home</a></li>
             <li><a href="#listen">Listen</a></li>
             <li><a href="#about">About</a></li>
 
@@ -79,21 +96,25 @@
           <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
           <li data-target="#myCarousel" data-slide-to="1"></li>
           <li data-target="#myCarousel" data-slide-to="2"></li>
+          
 
 
         </ol>
         <div class="carousel-inner" role="listbox">
+          
+
           <div class="item active">
-            <img style="object-fit: cover; overflow: hidden;" class="first-slide" src="img/yes_dude.jpg" alt="First slide"> 
+            <img style="object-fit: cover; overflow: hidden;" class="img-fluid" src="img/blackandwhite1.jpg" alt="Michael Buono Playing Music">
           </div>
 
           <div class="item">
-            <img style="object-fit: cover; overflow: hidden;" class="second-slide" src="img/studio.jpg" alt="Fifth slide">
+            <img style="object-fit: cover; overflow: hidden;" class="third-slide" src="img/clarendon2.jpg" alt="Michael Buono playing Slow it Down">
           </div>
 
           <div class="item">
-            <img style="object-fit: cover; overflow: hidden;" class="third-slide" src="img/wall.jpg" alt="Sixth slide">
+            <img style="object-fit: cover; overflow: hidden;" class="third-slide" src="img/lookingaway.jpg" alt="Michael Buono playing Slow it Down in Oakland, California">
           </div>
+
         </div>
         <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
           <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
@@ -125,7 +146,7 @@
             <a href="http://wwww.google.com">Amazon</a>, and <a href="http://wwww.google.com">Spotify</a>
 
           </span></h2>
-          <p class="lead">Released in September 2016, <i>Slow it Down</i> is a five song EP featuring rock, pop, and new wave sounds.</p>
+          <p class="lead">Set to be released in in December 2016, <i>Slow it Down</i> is a five song EP featuring rock, pop, and new wave sounds.</p>
           
         </div>
         
@@ -142,11 +163,11 @@
 
       <div class="row featurette">
         <div class="col-md-7 col-md-push-5">
-          <h2 class="featurette-heading">Michael Buono <span class="text-muted">is a singer/songwriter from Arlington, Virginia.</span></h2>
-          <p class="lead">A classically trained pianist turned romantic, Michael began writing songs in high school in the basement of his childhood home. Eight years later, he has just released his first studio album, <i>Slow it Down</i>. </p>
+          <h2 class="featurette-heading">Michael Buono <span class="text-muted">is a singer/songwriter based in Oakland, California.</span></h2>
+          <p class="lead">A classically trained pianist turned romantic, Michael began writing songs in high school in the basement of his childhood home. Eight years later, he is on the verge of releasing his first studio album, <i>Slow it Down</i>. </p>
         </div>
         <div class="col-md-5 col-md-pull-7">
-          <img class="featurette-image img-responsive center-block" src="img/formals.jpg" alt="Generic placeholder image"> 
+          <img class="featurette-image img-responsive center-block" src="img/formals.jpg" alt="Michael Buono"> 
         </div>
       </div>
 
@@ -154,11 +175,41 @@
 
       <div class="row featurette">
         <div class="col-md-7">
-          <h2 class="featurette-heading">There are no shows<span class="text-muted"> currently scheduled.</span></h2>
-          <p class="lead">Stay tuned!</p>
+          <h2 class="contact-heading">Shows</h2>
+
+          <div  class="tbl-header">
+<table cellpadding="0" cellspacing="0" border="0">
+  <thead>
+    <tr>
+      <th>Date</th>
+      <th>City</th>
+      <th>Venue</th>
+      <th>Time</th>
+      <th>Tickets</th>
+    </tr>
+  </thead>
+</table>
+</div>
+<div  class="tbl-content">
+<table cellpadding="0" cellspacing="0" border="0">
+  <tbody>
+    <tr>
+      <td>October 5, 2016</td>
+      <td>Alameda, California </td>
+      <td>Fireside Lounge</td>
+      <td>8:00 PM</td>
+      <td><a href="http://www.thefiresidelounge.com/">
+    <div style="height:100%;width:100%">
+      Free for 21+
+    </div>
+  </a></td>
+    </tr>
+    </tbody>
+</table>
+</div>
         </div>
         <div class="col-md-5">
-          <img class="featurette-image img-responsive center-block" src="img/hp.jpg" alt="Generic placeholder image" height="500" width="500">
+          <img class="featurette-image img-responsive center-block" src="img/hp.jpg" alt="Michael Buono" height="500" width="500">
         </div>
       </div>
 
@@ -169,13 +220,39 @@
 
       <div class="row featurette">
         <div class="col-md-7 col-md-push-5">
-          <h2 class="featurette-heading">Contact <span class="text-muted">Michael</span></h2>
-          <p class="lead">Email: michaelfbuono94@gmail.com</p>
+          <h2 class="contact-heading">Contact <span class="text-muted">Michael</span></h2>
+          <!-- <p class="lead">Email: michaelfbuono94@gmail.com</p> -->
+
+          <!-- try this thing -->
+          
+          <form id="contactform" method="post">
+        
+            <label>Name</label>
+            <input name="name" placeholder="Type Here">
+
+            <br></br>        
+            <label>Email</label>
+            <input name="_replyto" type="email" placeholder="Type Here">
+            <br></br>        
+   
+            <label>Message</label>
+            <textarea name="message" placeholder="Type Here"></textarea>
+
+            <br></br>
+                    
+            <input id="sendMessage" name="submit" type="submit" value="Submit">
+                
+          </form>
+
+
+
 
         </div>
         <div class="col-md-5 col-md-pull-7">
 
-          <img class="featurette-image img-responsive center-block" src="img/yac_sq.jpg" alt="Generic placeholder image" height="80px" width="500">
+        <br></br>
+
+          <img class="featurette-image img-responsive center-block" src="img/yac_sq.jpg" alt="Contact Michael Buono" height="80px" width="500">
         </div>
       </div>
 
@@ -187,18 +264,19 @@
 
 
 
+
+
       <!-- FOOTER -->
       <footer>
 
 
         <a href= "http://www.facebook.com/michaelbuonomusic" target="_blank"><i class="fa fa-facebook-official fa-2x"></i></a>
-        <a href= "http://www.spotify.com" target="_blank"><i class="fa fa-spotify fa-2x"></i></a>
+        <a href= "https://open.spotify.com/user/1212931790" target="_blank"><i class="fa fa-spotify fa-2x"></i></a>
 
         <a href= "http://www.youtube.com/mbuono94" target="_blank"><i class="fa fa-youtube fa-2x"></i> </a>
         <a href= "http://www.soundcloud.com/mbuono94" target="_blank"><i class="fa fa-soundcloud fa-2x"></i></a>
         <a href= "http://www.instagram.com/mbuono94" target="_blank"><i class="fa fa-instagram fa-2x"></i></a>
-        <a href= "https://itunes.apple.com/us/artist/ben-rector/id285154089?ign-mpt=uo%3D4" target="_blank"><i class="fa fa-itunes fa-2x"></i></a>
-        <a href= "https://www.amazon.com/gp/entity/Ben-Rector/B005MKBB56?ie=UTF8&*Version*=1&*entries*=0" target="_blank"><i class="fa fa-amazon fa-2x"></i></a>
+        <a href= "https://www.amazon.com" target="_blank"><i class="fa fa-amazon fa-2x"></i></a>
         <a href= "https://www.apple.com" target="_blank"><i class="fa fa-apple fa-2x"></i></a>
 
 
@@ -229,6 +307,7 @@
     <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
     <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
     <script type="text/javascript" src="slick/slick.min.js"></script>
+    <script type="text/javascript" src="button.js"
 
     <script type="text/javascript">
     $(document).ready(function(){

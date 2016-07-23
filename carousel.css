@@ -20,6 +20,7 @@ body {
   z-index: 20;
 }
 
+
 /* Flip around the padding for proper display in narrow viewports */
 .navbar-wrapper > .container {
   padding-right: 0;
@@ -52,6 +53,19 @@ body {
   height: 500px;
   background-color: #777;
 }
+
+
+/*.carousel-inner > .item > img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  max-height: 800px;
+  width: auto;
+}*/
+
 .carousel-inner > .item > img {
   position: absolute;
   top: 0;
@@ -92,6 +106,75 @@ body {
   letter-spacing: -1px;
 }
 
+/* the form stuff */
+
+html,body
+{
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden; 
+}
+
+/* Centre the form within the page */
+form {
+    margin:0 auto;
+    width:459px;
+}
+
+
+/* Style the text boxes */
+input, textarea {
+    /*width:439px;*/
+    width:50%;
+    box-sizing: border-box;
+    height:27px;
+    background:#efefef;
+    border:1px solid #dedede;
+    padding:10px;
+    margin-top:3px;
+    font-size:0.9em;
+    color:#3a3a3a;
+    -moz-border-radius:5px;
+    -webkit-border-radius:5px;
+    border-radius:5px;
+    box-sizing: border-box;
+}
+
+textarea {
+  height:213px;
+  background:url(images/textarea-bg.jpg) right no-repeat #efefef;
+  width: 65%;
+}
+
+
+input:focus, textarea:focus {
+    border:1px solid #97d6eb;
+}
+
+input, select{
+    width:60%;
+    box-sizing: border-box;
+}
+
+#sendMessage {
+    width:127px;
+    height:38px;
+    /*text-indent:-9999px;*/
+    border:none;
+    margin-top:20px;
+    cursor:pointer;
+    text-align: center;
+}
+label {
+    display:block;
+    margin-top:20px;
+    letter-spacing:2px;
+}
+
+
+
 
 /* RESPONSIVE CSS
 -------------------------------------------------- */
@@ -125,10 +208,109 @@ body {
   .featurette-heading {
     font-size: 50px;
   }
+.contact-heading {
+    font-size: 50px;
+  }
+
 }
 
 @media (min-width: 992px) {
   .featurette-heading {
     margin-top: 120px;
   }
+}
+
+
+/* asdfasdfasdfasdf the table stuff */
+h1{
+  font-size: 30px;
+  color: #5a5a5a;
+  text-transform: uppercase;
+  font-weight: 300;
+  text-align: center;
+  margin-bottom: 15px;
+}
+table{
+  width:100%;
+  table-layout: fixed;
+}
+.tbl-header{
+  background-color: rgba(255,255,255,0.3);
+ }
+.tbl-content{
+  height:300px;
+  overflow-x:auto;
+  margin-top: 0px;
+  border: 1px solid rgba(255,255,255,0.3);
+}
+th{
+  padding: 20px 15px;
+  text-align: left;
+  font-weight: 500;
+  font-size: 13px;
+  color: #5a5a5a;
+  text-transform: uppercase;
+}
+td{
+  padding: 15px;
+  text-align: left;
+  vertical-align:middle;
+  font-weight: 300;
+  font-size: 13px;
+  color: #5a5a5a;
+  border-bottom: solid 1px rgba(255,255,255,0.1);
+}
+
+
+.table td.fit, 
+.table th.fit {
+    white-space: nowrap;
+    width: 1%;
+}
+
+/* demo styles */
+
+@import url(http://fonts.googleapis.com/css?family=Roboto:400,500,300,700);
+
+section{
+  margin: 50px;
+}
+
+
+/* follow me template */
+.made-with-love {
+  margin-top: 40px;
+  padding: 10px;
+  clear: left;
+  text-align: center;
+  font-size: 10px;
+  font-family: arial;
+  color: #fff;
+}
+.made-with-love i {
+  font-style: normal;
+  color: #F50057;
+  font-size: 14px;
+  position: relative;
+  top: 2px;
+}
+.made-with-love a {
+  color: #fff;
+  text-decoration: none;
+}
+.made-with-love a:hover {
+  text-decoration: underline;
+}
+
+
+/* for custom scrollbar for webkit browser*/
+
+::-webkit-scrollbar {
+    width: 6px;
+} 
+::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3); 
+} 
+::-webkit-scrollbar-thumb {
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3); 
 }
