@@ -152,7 +152,7 @@ input:focus, textarea:focus {
     border:1px solid #97d6eb;
 }
 
-#submit {
+#sendMessage {
     width:127px;
     height:38px;
     /*text-indent:-9999px;*/
