@@ -8,6 +8,6 @@ $("#sendMessage").on("click", function() {
         data: {message: message},
         dataType: "json"
     });
-    alert('Thanks for the email, we\'ll be in touch promptly.');
+    alert('Thanks for reaching out! I will get back to you as soon as possible.');
     return false;
 });
