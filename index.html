@@ -87,21 +87,25 @@
           <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
           <li data-target="#myCarousel" data-slide-to="1"></li>
           <li data-target="#myCarousel" data-slide-to="2"></li>
+          
 
 
         </ol>
         <div class="carousel-inner" role="listbox">
+          
+
           <div class="item active">
-            <img style="object-fit: cover; overflow: hidden;" class="first-slide" src="img/yes_dude.jpg" alt="First slide"> 
+            <img style="object-fit: cover; overflow: hidden;" class="img-fluid" src="img/blackandwhite1.jpg" alt="Fifth slide">
           </div>
 
           <div class="item">
-            <img style="object-fit: cover; overflow: hidden;" class="second-slide" src="img/studio.jpg" alt="Fifth slide">
+            <img style="object-fit: cover; overflow: hidden;" class="third-slide" src="img/clarendon2.jpg" alt="Eigth slide">
           </div>
 
           <div class="item">
-            <img style="object-fit: cover; overflow: hidden;" class="third-slide" src="img/wall.jpg" alt="Sixth slide">
+            <img style="object-fit: cover; overflow: hidden;" class="third-slide" src="img/lookingaway.jpg" alt="Tenth slide">
           </div>
+
         </div>
         <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
           <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
@@ -133,7 +137,7 @@
             <a href="http://wwww.google.com">Amazon</a>, and <a href="http://wwww.google.com">Spotify</a>
 
           </span></h2>
-          <p class="lead">Released in September 2016, <i>Slow it Down</i> is a five song EP featuring rock, pop, and new wave sounds.</p>
+          <p class="lead">Set to be released in in December 2016, <i>Slow it Down</i> is a five song EP featuring rock, pop, and new wave sounds.</p>
           
         </div>
         
@@ -151,7 +155,7 @@
       <div class="row featurette">
         <div class="col-md-7 col-md-push-5">
           <h2 class="featurette-heading">Michael Buono <span class="text-muted">is a singer/songwriter from Arlington, Virginia.</span></h2>
-          <p class="lead">A classically trained pianist turned romantic, Michael began writing songs in high school in the basement of his childhood home. Eight years later, he has just released his first studio album, <i>Slow it Down</i>. </p>
+          <p class="lead">A classically trained pianist turned romantic, Michael began writing songs in high school in the basement of his childhood home. Eight years later, he is on the verge of releasing his first studio album, <i>Slow it Down</i>. </p>
         </div>
         <div class="col-md-5 col-md-pull-7">
           <img class="featurette-image img-responsive center-block" src="img/formals.jpg" alt="Generic placeholder image"> 
@@ -177,8 +181,31 @@
 
       <div class="row featurette">
         <div class="col-md-7 col-md-push-5">
-          <h2 class="featurette-heading">Contact <span class="text-muted">Michael</span></h2>
-          <p class="lead">Email: michaelfbuono94@gmail.com</p>
+          <h2 class="contact-heading">Contact <span class="text-muted">Michael</span></h2>
+          <!-- <p class="lead">Email: michaelfbuono94@gmail.com</p> -->
+
+          <!-- try this thing -->
+          
+          <form method="post" action="index.php">
+        
+            <label>Name</label>
+            <input name="name" placeholder="Type Here">
+                    
+            <label>Email</label>
+            <input name="email" type="email" placeholder="Type Here">
+                    
+            <label>Message</label>
+            <textarea name="message" placeholder="Type Here"></textarea>
+
+            <label>*What is 2+2? (Anti-spam)</label>
+            <input name="human" placeholder="Type Here">
+                    
+            <input id="submit" name="submit" type="submit" value="Submit">
+                
+          </form>
+
+
+
 
         </div>
         <div class="col-md-5 col-md-pull-7">
@@ -190,6 +217,8 @@
       <hr class="featurette-divider">
 
       <!-- /END THE FEATURETTES -->
+
+
 
 
 
