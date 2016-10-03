@@ -120,14 +120,14 @@ html,body
 /* Centre the form within the page */
 form {
     margin:0 auto;
-    width:459px;
+    width:100%;
 }
 
 
 /* Style the text boxes */
 input, textarea {
     /*width:439px;*/
-    width:50%;
+    width:65%;
     box-sizing: border-box;
     height:27px;
     background:#efefef;
@@ -154,7 +154,7 @@ input:focus, textarea:focus {
 }
 
 input, select{
-    width:60%;
+    width:65%;
     box-sizing: border-box;
 }
 
