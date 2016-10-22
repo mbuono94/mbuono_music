@@ -327,14 +327,14 @@ section{
         max-width: 980px;
         position: relative;
         margin: 0 auto;
-        border: 1px solid green;
+        /*border: 1px solid green;*/
     }
 
     .vimeo-standard {
         float: left;
         height: 300px;
         width: 47%;
-        border: 1px solid #000;
+        /*border: 1px solid #000;*/
         margin: 10px;
     }
 
