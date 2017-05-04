@@ -40,7 +40,7 @@ p {
 }
 a {
   color: white;
-  
+
   -webkit-transition: all 0.2s ease-in-out;
   -moz-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
@@ -48,7 +48,7 @@ a {
 a:hover,
 a:focus {
   text-decoration: none;
-  color: #1d9b6c;
+  color: gray;
 }
 .light {
   font-weight: 400;
@@ -223,6 +223,16 @@ a:focus {
 }
 .content-section {
   padding-top: 50px;
+  height: 100%;
+}
+.spotify {
+  /*display: table;*/
+  /*height: 100%;*/
+  /*vertical-align: middle;*/
+}
+
+.content-section2 {
+  padding-top: 50px;
 }
 .download-section {
   width: 100%;
@@ -258,6 +268,9 @@ a:focus {
 }
 @media (min-width: 767px) {
   .content-section {
+    padding-top: 125px;
+  }
+  .content-section2 {
     padding-top: 125px;
   }
   .download-section {
@@ -421,6 +434,7 @@ td{
   padding-bottom: 56.25%; /* 16:9 */
   padding-top: 25px;
   height: 0;
+
 }
 .videoWrapper iframe {
   position: absolute;
