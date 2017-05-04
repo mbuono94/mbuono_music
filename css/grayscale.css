@@ -39,7 +39,7 @@ p {
   }
 }
 a {
-  color: #42DCA3;
+  color: white;
   -webkit-transition: all 0.2s ease-in-out;
   -moz-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
@@ -83,7 +83,8 @@ a:focus {
   transition: background 0.3s ease-in-out;
 }
 .navbar-custom .nav li a:hover {
-  color: rgba(255, 255, 255, 0.8);
+  /*color: rgba(255, 255, 255, 0.8);*/
+  color: lightgray;
   outline: none;
   background-color: transparent;
 }
@@ -99,7 +100,7 @@ a:focus {
   background-color: rgba(255, 255, 255, 0.3);
 }
 .navbar-custom .nav li.active a:hover {
-  color: white;
+  color: lightgray;
 }
 @media (min-width: 768px) {
   .navbar-custom {
@@ -224,6 +225,7 @@ a:focus {
 }
 .download-section {
   width: 100%;
+  height: 100%;
   padding: 50px 0;
   color: white;
   background: url(../img/downloads-bg.jpg) no-repeat center center scroll;
@@ -232,6 +234,7 @@ a:focus {
   -moz-background-size: cover;
   background-size: cover;
   -o-background-size: cover;
+  margin-top: 10px;
 }
 #map {
   width: 100%;
