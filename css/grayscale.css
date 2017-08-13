@@ -499,6 +499,33 @@ td{
 
 }
 
+
+.red{
+    color:red;
+    }
+.form-area
+{
+    /*background-color: #FAFAFA;*/
+  padding: 10px 40px 60px;
+  margin: 10px 0px 60px;
+  /*border: 1px solid GREY;*/
+  }
+
+/*.form-area
+{
+    text-align: center;
+
+    background-color: #FAFAFA;
+  padding: 10px 40px 60px;
+  margin: 10px 0px 60px;
+  border: 1px solid GREY;
+  }*/
+
+  .center_div{
+    margin: 0 auto;
+    width:100% /* value of your choice which suits your alignment */
+}
+
 /*.imgBackground {
   display: table;
   width: 100%;
