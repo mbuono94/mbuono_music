@@ -132,7 +132,7 @@
 
 
 
-               <br></br>
+               <!-- <br></br> -->
 
 
 
@@ -140,8 +140,13 @@
 
                 <iframe src="https://open.spotify.com/follow/1/?uri=spotify:artist:5OJf8m79y7w11xvsLssBEV&size=detail&theme=dark" width="225" height="56" scrolling="no" frameborder="0" style="border:none; overflow:hidden;" allowtransparency="true"></iframe>
                 <br></br>
-                 <iframe src="https://embed.spotify.com/?uri=spotify%3Aalbum%3A7i47sUlzh9gI5hirJ5dYdt" width="100%" height="310" frameborder="0" allowtransparency="true"></iframe>
-                 <br></br>
+
+
+                <div class="spotify-embeds">
+  <div class="spotify-embed"><iframe src="https://embed.spotify.com/?uri=spotify%3Aalbum%3A7i47sUlzh9gI5hirJ5dYdt" width="100%" height="310" frameborder="0" allowtransparency="true"></iframe></div>
+
+
+                 <!-- <iframe src="https://embed.spotify.com/?uri=spotify%3Aalbum%3A7i47sUlzh9gI5hirJ5dYdt" width="100%" height="310" frameborder="0" allowtransparency="true"></iframe> -->
 
 
         </div>
@@ -149,31 +154,45 @@
     </div>
 
     <!-- About Section -->
-    <section id="download" class="container content-section text-center">
+    <div id="about" class="container content-section text-center">
         <div class="row">
             <div class="col-lg-8 col-lg-offset-2">
 
-<br></br>
 <h2>Watch</h2>
 
-<div class="videoWrapper">
-<div class="vimeo-video-2 vimeo-standard">
-         <iframe src="https://www.youtube.com/embed/pkH5qrcsMp8"  frameborder="0" allowfullscreen=true></iframe>
-      </div>
-           </div>
+<!-- <div class="videoWrapper"> -->
+  <!-- <div class="spotify-embeds"> -->
+<!-- <div class="vimeo-video-2 vimeo-standard"> -->
+  <!-- <div class = "spotify-embed"> -->
+
+    <!-- <div class="video-responsive"> -->
+
+      <div class="videoWrapper">
+
+        <iframe width="560" height="349" src="https://www.youtube.com/embed/pkH5qrcsMp8" frameborder="0" allowfullscreen></iframe>
+
+      <!-- <iframe width="" height="100%" src="https://www.youtube.com/embed/pkH5qrcsMp8" frameborder="0" allowfullscreen></iframe> -->
+    </div>
+
+         <!-- <iframe src="https://www.youtube.com/embed/pkH5qrcsMp8"  width="100%" height="400" frameborder="0" allowfullscreen=true></iframe> -->
+      <!-- </div> -->
+           <!-- </div> -->
 
 
-        <br></br>
+         <!-- </div> -->
                 
             </div>
         </div>
     </section>
 
+<div class="container  spacer"></div>
 
-
+<div></div>
     <!-- Contact Section -->
     <section id="contact" class="container content-section2 text-center">
         <div class="row">
+                      <div class="col-lg-8 col-lg-offset-2 spotify">
+
 
     <h2>Shows</h2>
 
@@ -279,6 +298,7 @@
 
 
         </div>
+      </div>
     </section>
 
 
@@ -425,6 +445,58 @@ $(document).ready(function(){
   });
 });
 </script>
+<script>
+$(window).on('load resize', function() {
+  $('iframe[src*="www.youtube.com"]').each( function() {
+    $(this).css('width', $(this).parent().css('width'));
+    $(this).attr('src', $(this).attr('src'));
+    $(this).removeClass('loaded');
+    
+    $(this).on('load', function(){
+      $(this).addClass('loaded');
+    });
+  });
+});
+</script>
+
+<script>
+  // Find all YouTube videos
+var $allVideos = $("iframe[src^='//www.youtube.com']"),
+
+    // The element that is fluid width
+    $fluidEl = $("body");
+
+// Figure out and save aspect ratio for each video
+$allVideos.each(function() {
+
+  $(this)
+    .data('aspectRatio', this.height / this.width)
+
+    // and remove the hard coded width/height
+    .removeAttr('height')
+    .removeAttr('width');
+
+});
+
+// When the window is resized
+$(window).resize(function() {
+
+  var newWidth = $fluidEl.width();
+
+  // Resize all videos according to their own aspect ratio
+  $allVideos.each(function() {
+
+    var $el = $(this);
+    $el
+      .width(newWidth)
+      .height(newWidth * $el.data('aspectRatio'));
+
+  });
+
+// Kick off one resize to fix all videos on page load
+}).resize();
+</script>
+
 
 </body>
 
