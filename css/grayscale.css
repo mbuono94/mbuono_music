@@ -28,7 +28,7 @@ h6 {
 }
 p {
   margin: 0 0 25px;
-  font-size: 18px;
+  font-size: 25px;
   line-height: 1.5;
   font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
@@ -438,7 +438,7 @@ td{
 }
 
 
-.table td.fit, 
+.table td.fit,
 .table th.fit {
     white-space: nowrap;
     width: 100%;
@@ -544,43 +544,43 @@ td{
 .spacer {
   margin-top: 2%;
   margin-bottom: 2%;
-}      
+}
 .block {
   height: 300px;
-  padding-top: 15px;  
+  padding-top: 15px;
   background-color: black;
-}  
+}
 .block2 {
   min-height: 160px;
-  padding-top: 15px; 
-} 
+  padding-top: 15px;
+}
 .center {
   position: absolute;
 /*  top: 0;
   bottom: 0; */
   left: 0;
   right: 0;
-  margin: auto;  
+  margin: auto;
 }
 
 .spotify-embeds {
   width: 100%;
-  padding: 50px;  
+  padding: 50px;
 }
 
 .spotify-embed {
   background: #282828;
-  
+
   &:not(:last-of-type) {
     margin-bottom: 5px;
   }
-  
+
   iframe {
     display: block;
     transition: opacity 0.125s;
     .js & {
       opacity: 0;
-      
+
       &.loaded {
         opacity: 1;
       }

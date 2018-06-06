@@ -1,0 +1,344 @@
+/* CSS reset */
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,form,fieldset,input,textarea,p,blockquote,th,td{margin:0;padding:0}html,body{margin:0;padding:0}table{border-collapse:collapse;border-spacing:0}fieldset,img{border:0}input{border:1px solid #b0b0b0;padding:3px 5px 4px;color:#979797;width:190px}address,caption,cite,code,dfn,th,var{font-style:normal;font-weight:normal}ol,ul{list-style:none}caption,th{text-align:left}h1,h2,h3,h4,h5,h6{font-size:100%;font-weight:normal}q:before,q:after{content:''}abbr,acronym{border:0}
+
+/* Basic Styles */
+html, body {
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden;
+}
+body {
+  text-align:center;
+  font-family: 'Montserrat', 'arial', 'helvetica', sans-serif;
+  font-weight: 400;
+  line-height: 1.5;
+  color:#fff;
+  font-size: 12px;
+  letter-spacing: .3em;
+  background:#000 url('../images/bg.jpg') top center no-repeat;
+  background-size: 100% auto;
+}
+a {
+  color:#deb37f;
+  text-decoration: none;
+  transition:0.3s  ease-in-out;
+}
+a:hover {
+  color:#8e4872;
+}
+h1, h2, h3, h4 {
+  text-transform: uppercase;
+  text-align: center;
+  line-height: 1;
+}
+h1, h2 {
+  color:#000;
+  font-size: 80px;
+  font-weight: 700;
+  padding: 0;
+  margin: 0 auto;
+}
+h2 {
+  padding: 10px 0;
+  font-size: 60px;
+  font-weight: 400;
+}
+h3 {
+  font-size: 24px;
+  font-weight: 400;
+  margin-bottom: 20px;
+  text-shadow: 0 0 6px #000000;
+}
+.clear {
+  clear: both;
+}
+
+/* Header Styles */
+header {
+}
+header h1 {
+  width: 220px;
+  height: 264px;
+  background: url('../images/logo.png') center top no-repeat;
+  background-size: 100% auto;
+  margin: 50px auto;
+}
+header h1 span {
+  visibility:hidden;
+  text-indent: -9999px;
+}
+
+/* First Section Styles */
+section.firstsection {
+  margin-top:600px !important;
+}
+
+/* Video Section Styles */
+
+#videosection h4 {
+  font-style: italic;
+  color:#bababa;
+}
+div#responsivevideowrap {
+  display:block;
+  position: relative;
+  width: calc(75% - 6px);
+  height: 0;
+  padding-bottom: 42%;
+  margin:0 auto;
+  border: 3px solid #deb37f;
+}
+div#responsivevideowrap iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+/* Calltoaction Styles */
+#ctasection {
+    padding: 0;
+    text-align: center;
+    margin: 100px auto 0;
+    display: block;
+    max-width: 750px;
+}
+.albumwrap {
+  width:495px;
+  margin: 0 auto 0 auto;
+  display: block;
+}
+img.albumcover {
+  height:330px;
+  float:left;
+  margin:0 15px 0 0;
+}
+img.prealbumcover {
+  height:300px;
+  margin:0 auto;
+}
+.ctabuttons {
+  float: right;
+}
+.ctabuttons li {
+  display:block;
+  margin:0 0 10px 0;
+}
+.ctabuttons li a {
+  display:block;
+}
+.ctabuttons li a:hover, .ctabuttons li a.unlinked {
+  opacity: 0.75
+}
+.ctabuttons li a img {
+width: 150px;
+height:auto;
+}
+h3#second {
+  margin-top:20px;
+}
+
+/* Tour Styles */
+#tour {
+  margin: 150px auto 0;
+  width:75%;
+  clear: both;
+}
+#tour h3 {
+  margin-bottom: 15px;
+}
+#penguinlogo {
+  display: block;
+  margin:20px auto 0;
+}
+
+/* wdwConnect Styles */
+#connectsection {
+  position:absolute;
+  top:15px;
+  left:15px;
+}
+.genericon span {
+  visibility: hidden;
+  text-indent: -9999px;
+}
+.genericon-socials li {
+  display:inline-block;
+}
+.genericon-socials li.merchlink {
+  display: block;
+  margin-bottom: 10px;
+}
+.genericon-socials li.merchlink a {
+  padding: 3px 5px;
+  background: #fff;
+  border-radius: 3px;
+  color: #000;
+  letter-spacing: .2em;
+  font-weight: 700;
+}
+.genericon-socials li a {
+  color:#fff;
+}
+.genericon-socials li a:hover {
+  color:#deb37f;
+}
+.genericon-socials {
+  display:block;
+}
+.genericon {
+  display:block;
+  width: 30px;
+  height:30px;
+  font-size:30px;
+  line-height:30px;
+  margin:0 3px 0 0;
+  vertical-align: middle;
+}
+.genericon-downarrow {
+  width: 60px;
+  height:60px;
+  font-size:60px;
+  line-height:60px;
+  margin: 0 0 0 -30px;
+  color: #fff;
+  text-shadow: 0 0 5px #000;
+  position: absolute;
+  bottom:10px;
+  left: 50%;
+
+}
+
+/* Contact Section Styles */
+#contactsection {
+  margin-top: 100px;
+}
+a#mailinglist {
+  display: inline-block;
+  background: #none;
+  margin:15px auto 0 auto;
+  padding:10px;
+  text-align:center;
+  color: #deb37f;
+  border-radius: 5px;
+  border:2px solid #deb37f;
+}
+a#mailinglist:hover {
+  background: #deb37f;
+  color:#000;
+}
+
+/* FOOTER RULES */
+footer {
+  display: block;
+  text-transform: uppercase;
+  margin:100px auto 200px auto;
+}
+p#credits {
+  margin-top:100px;
+}
+
+
+/********* MEDIA QUERIES ***********/
+@media screen and (min-width: 2000px) {
+  header h1 {
+    width: 496px;
+    height: 595px;
+    margin: 50px auto;
+  }
+  .firstsection {
+    margin-top: 900px;
+  }
+}
+@media screen and (max-width: 1050px) {
+  header h1 {
+    margin: 25px auto;
+  }
+}
+@media screen and (max-width: 800px) {
+  header h1 {
+    width: 150px;
+    height: 180px;
+    margin: 25px auto;
+  }
+  .genericon-downarrow {
+    display: none;
+  }
+  h3 {
+    font-size: 20px;
+  }
+  .firstsection {
+    margin-top: 300px;
+  }
+  div#responsivevideowrap {
+    width: 100%;
+    padding-bottom: 42%;
+    border-left: none;
+    border-right: none;
+  }
+  #tour {
+    width:100%;
+  }
+  /*footer*/
+  footer {
+    font-size: 8px;
+    margin: 100px auto 100px;
+  }
+}
+@media screen and (max-width: 500px) {
+  header h1 {
+    width: 100px;
+    height: 120px;
+    margin: 0 auto;
+  }
+  h3 {
+    font-size: 14px;
+  }
+  #connectsection {
+    top:10px;
+    left:10px;
+  }
+  .genericon-socials li.merchlink {
+    display: block;
+    margin-bottom: 5px;
+  }
+  .genericon-socials li {
+    display:block;
+    margin-bottom: 3px;
+  }
+  .firstsection {
+    margin-top: 100px;
+  }
+  #tour, #contactsection, #ctasection {
+    margin-top:50px
+  }
+  #contactsection {
+    font-size: 8px;
+  }
+  /*calltoaction*/
+  .albumwrap {
+    width:90%;
+    margin: 20px auto 0;
+  }
+  img.albumcover {
+    width:100%;
+    height:auto;
+    float:none;
+    margin:0 0 20px 0;
+  }
+  .ctabuttons {
+    float: none;
+  }
+  .ctabuttons li {
+    display:inline-block;
+  }
+  .ctabuttons li a img {
+    width:150px;
+    height: auto;
+  }
+  form #mce-EMAIL {
+    width:calc(62% - 20px);
+  }
+}
