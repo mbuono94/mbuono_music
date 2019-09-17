@@ -42,14 +42,6 @@
     <!-- Theme CSS -->
     <link href="css/grayscale.css" rel="stylesheet">
 
-    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
-        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-    <![endif]-->
-
-
 
 </head>
 
@@ -66,16 +58,6 @@
                     <span class="light">Michael</span> Buono
                 </a>
             </div>
-
-
-            <!-- <a href= "http://www.facebook.com/michaelbsongs" target="_blank"><i class="fa fa-facebook-official fa-2x"></i></a>
-        <a href= "http://www.twitter.com/michaelbsongs" target="_blank"><i class="fa fa-twitter fa-2x"></i></a>
-                <a href= "https://open.spotify.com/album/7i47sUlzh9gI5hirJ5dYdt" target="_blank"><i class="fa fa-spotify fa-2x"></i></a>
-<a href= "https://itunes.apple.com/us/album/slow-it-down-ep/id1184005600" target="_blank"><i class="fa fa-apple fa-2x"></i></a>
-
-        <a href= "http://www.youtube.com/MichaelBuono" target="_blank"><i class="fa fa-youtube fa-2x"></i> </a>
-        <a href= "http://www.soundcloud.com/michaelbsongs" target="_blank"><i class="fa fa-soundcloud fa-2x"></i></a>
-        <a href= "http://www.instagram.com/michaelbsongs" target="_blank"><i class="fa fa-instagram fa-2x"></i></a> -->
 
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse navbar-right navbar-main-collapse">
@@ -127,11 +109,6 @@
 
     <div class="fakeSection">
     <div class="imgWrapper">
-
-
-
-<!--     <img src = "img/test_crop.png">
- -->
      <img src = "img/fence_sitting24.jpg">
           <!-- <img src = "img/fence_sitting_more_white.jpg"> -->
 
@@ -141,18 +118,6 @@
 </div>
 </div>
 
-    <!-- Intro Header -->
-    <!-- <header class="intro"> -->
-        <!-- <div class="intro-body"> -->
-            <!-- <div class="container"> -->
-                <!-- <div class="row"> -->
-                    <!-- <div class="col-md-8 col-md-offset-2"> -->
-
-                    <!-- </div> -->
-                <!-- </div> -->
-            <!-- </div> -->
-        <!-- </div> -->
-    <!-- </header> -->
 
     <!-- About Section -->
     <div id="about" class="container content-section text-center">
@@ -173,35 +138,11 @@ Michael turned to his favorite influences to find a musical backdrop for these e
 
 <h2>Watch The 7 Chords Music Video</h2>
 
-<!-- <div class="videoWrapper"> -->
-  <!-- <div class="spotify-embeds"> -->
-<!-- <div class="vimeo-video-2 vimeo-standard"> -->
-  <!-- <div class = "spotify-embed"> -->
-
-
     <div class="videoWrapper">
-
-        <!-- <iframe width="100%" height="310" src="https://www.youtube.com/embed/mWdROd8HAmA" frameborder="0" allowfullscreen></iframe> -->
 
       <iframe width="" height="100%" src="https://www.youtube.com/embed/7c943uhTmbo" frameborder="0" allowfullscreen></iframe>
     </div>
-    <br></br>
-    <br></br>
-
-    <h2>Live Performance Vids</h2>
-
-<!-- <div class="videoWrapper"> -->
-  <!-- <div class="spotify-embeds"> -->
-<!-- <div class="vimeo-video-2 vimeo-standard"> -->
-  <!-- <div class = "spotify-embed"> -->
-
-
-    <div class="videoWrapper">
-
-        <!-- <iframe width="100%" height="310" src="https://www.youtube.com/embed/mWdROd8HAmA" frameborder="0" allowfullscreen></iframe> -->
-
-      <iframe width="" height="100%" src="https://www.youtube.com/embed/videoseries?list=PLwrtkhLrSLKkQSbHstWrDd-vrJOoBPN7Q" frameborder="0" allowfullscreen></iframe>
-    </div>
+    
 
       <!-- <div class="videoWrapper"> -->
 
@@ -223,7 +164,7 @@ Michael turned to his favorite influences to find a musical backdrop for these e
 
 
     <!-- About Section -->
-    <div id="listen" class="container content-section text-center">
+    <div id="listen" class="container content-section text-center spotify">
         <div class="row">
 
 
@@ -254,54 +195,63 @@ Michael turned to his favorite influences to find a musical backdrop for these e
                 <br></br>
 
 <h2>Listen Now</h2>
-<div class="spotify-embed">
+<div>
 
-  <iframe src="https://embed.spotify.com/?uri=spotify%3Aalbum%3A7i47sUlzh9gI5hirJ5dYdt" width="100%" height="250" frameborder="0" allowtransparency="true"></iframe>
+<!--   <iframe src="https://embed.spotify.com/?uri=spotify%3Aalbum%3A7i47sUlzh9gI5hirJ5dYdt" width="100%" height="250" frameborder="0" allowtransparency="true"></iframe>
+
+ -->
+
+  <iframe src="https://open.spotify.com/embed/track/0vmoRIuCTcRMpsOP8inhRa" width="100%" height="80" frameborder="0" allowtransparency="true"></iframe>
+</div>
+
+<br></br>
+
+<script>$(window).on('load resize', function() {
+  $('iframe[src*="embed.spotify.com"]').each( function() {
+    $(this).css('width', $(this).parent().css('width'));
+    $(this).attr('src', $(this).attr('src'));
+    $(this).removeClass('loaded');
+    
+    $(this).on('load', function(){
+      $(this).addClass('loaded');
+    });
+  });
+});</script>
+
+<!-- <div class="spotify-embed">
+
+  <iframe src="https://open.spotify.com/embed/track/1qvHvmPk12otUEdisNAwcP" width="100%" height="50%" frameborder="0" allowtransparency="true"></iframe>
+</div>
+
+<br></br>
+
+
+  <div class="spotify-embed">
+  <iframe src="https://open.spotify.com/embed/track/6TAKgNLhNLPS0qBq3TqHxi" width="100%" height="100%" frameborder="0" allowtransparency="true"></iframe>
+</div> -->
 
 <!--   <iframe src="https://open.spotify.com/embed/track/0vmoRIuCTcRMpsOP8inhRa" width="100%" height="250" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
  -->
   <!-- <iframe width="100%" height="300" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/534902556&color=%23000000&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe> -->
 </div>
 
-
-
-
-
-
-
 <!--                  <iframe src="https://embed.spotify.com/?uri=spotify%3Aalbum%3A7i47sUlzh9gI5hirJ5dYdt" width="100%" height="310" frameborder="0" allowtransparency="true"></iframe>
  -->
 
         <!-- </div> -->
       </div>
-    </div>
 
 
-
-
-<div></div>
-    <!-- Contact Section -->
-    <section id="shows" class="container content-section2 text-center">
+<section id="shows" class="container content-section2 text-center">
         <div class="row">
 
     <h2>Upcoming Shows</h2>
+    <script charset="utf-8" src="https://widget.bandsintown.com/main.min.js"></script><a class="bit-widget-initializer" data-artist-name="Michael Buono" data-display-local-dates="false" data-display-past-dates="true" data-auto-style="false" data-text-color="#FFFFFF" data-link-color="#000" data-background-color="rgba(0,0,0,0)" data-display-limit="15" data-display-start-time="true" data-link-text-color="#FFFFFF" data-display-lineup="false" data-display-play-my-city="true" data-separator-color="rgba(124,124,124,0.25)"></a>
 
-    <table cellpadding="0" cellspacing="0" border="0">
-      </tr>
-      <tr>
-      <th>Date</th>
-      <th>City</th>
-      <th>Venue</th>
-      <th>Time</th>
-      <th>Tickets</th>
-    </tr>
-
-  </table>
-
-  <br></br>
-  <br></br>
+  </div>
+    <!-- Contact Section -->
+        <div class="row">
     <h2>Recent Shows</h2>
-
     <table cellpadding="0" cellspacing="0" border="0">
     <tr>
       <th>Date</th>
@@ -343,182 +293,6 @@ Michael turned to his favorite influences to find a musical backdrop for these e
     </td>
     </tr>
 
-    <tr>
-      <td>Feb 9, 2019</td>
-      <td>New York, New York </td>
-      <td>Pianos</td>
-      <td>6:30 PM</td>
-      <td>
-
-    <!-- <a href="https://www.ticketfly.com/purchase/event/1459400"> -->
-    <!-- <div style="height:100%;width:100%"> -->
-      $10
-    <!-- </div> -->
-
-    <!-- </a> -->
-    </td>
-    </tr>
-
-     <tr>
-      <td>Dec 26, 2018</td>
-      <td>Arlington, Virginia </td>
-      <td>Crystal City Pub</td>
-      <td>7:30 PM</td>
-      <td>
-
-    <!-- <a href="https://www.ticketfly.com/purchase/event/1459400"> -->
-    <!-- <div style="height:100%;width:100%"> -->
-      $10
-    <!-- </div> -->
-
-    <!-- </a> -->
-    </td>
-    </tr>
-
-     <tr>
-      <td>Nov 24, 2018</td>
-      <td>New York, New York </td>
-      <td>Pianos</td>
-      <td>7:00 PM</td>
-      <td>
-
-    <!-- <a href="https://www.ticketfly.com/purchase/event/1459400"> -->
-    <!-- <div style="height:100%;width:100%"> -->
-      $10
-    <!-- </div> -->
-
-    <!-- </a> -->
-    </td>
-    </tr>
-
-    <tr>
-      <td>Oct 13, 2018</td>
-      <td>New York, New York </td>
-      <td>The Delancey</td>
-      <td>7:00 PM</td>
-      <td>
-
-    <!-- <a href="https://www.ticketfly.com/purchase/event/1459400"> -->
-    <!-- <div style="height:100%;width:100%"> -->
-      $10
-    <!-- </div> -->
-
-    <!-- </a> -->
-    </td>
-    </tr>
-
-
-
-    <tr>
-      <td>July 19, 2018</td>
-      <td>Brooklyn, New York </td>
-      <td>The Well</td>
-      <td>9:00 PM</td>
-      <td>
-
-    <!-- <a href="https://www.ticketfly.com/purchase/event/1459400"> -->
-    <!-- <div style="height:100%;width:100%"> -->
-      $10
-    <!-- </div> -->
-
-    <!-- </a> -->
-    </td>
-    </tr>
-
-    <tr>
-      <td>July 18, 2018</td>
-      <td>Columbus, Ohio</td>
-      <td>The Tree Bar</td>
-      <td>8:30 PM</td>
-      <td>
-
-    <!-- <a href="https://www.ticketfly.com/purchase/event/1459400"> -->
-    <!-- <div style="height:100%;width:100%"> -->
-      Free
-    <!-- </div> -->
-
-    <!-- </a> -->
-    </td>
-    </tr>
-
-     <tr>
-      <td>July 17, 2018</td>
-      <td>Chicago, Illinois</td>
-      <td>Silvie's</td>
-      <td>8:30 PM</td>
-      <td>
-
-    <!-- <a href="https://www.ticketfly.com/purchase/event/1459400"> -->
-    <!-- <div style="height:100%;width:100%"> -->
-      $10, 21+
-    <!-- </div> -->
-
-    <!-- </a> -->
-    </td>
-    </tr>
-
-    <tr>
-      <td>July 14, 2018</td>
-      <td>Salt Lake City, Utah </td>
-      <td>RedLion Living Stage</td>
-      <td>7:00 PM</td>
-      <td>
-
-    <!-- <a href="https://www.ticketfly.com/purchase/event/1459400"> -->
-    <!-- <div style="height:100%;width:100%"> -->
-      Free
-    <!-- </div> -->
-
-    <!-- </a> -->
-    </td>
-    </tr>
-
-    <tr>
-      <td>July 13, 2018</td>
-      <td>Lake Tahoe, California </td>
-      <td>Pour House</td>
-      <td>5:00 PM</td>
-      <td>
-
-    <!-- <a href="https://www.ticketfly.com/purchase/event/1697990">
-    <div style="height:100%;width:100%"> -->
-      Free
-    </div>
-
-    </a>
-    </td>
-    </tr>
-
-    <tr>
-      <td>July 7, 2018</td>
-      <td>San Francisco, California </td>
-      <td>Hotel Utah</td>
-      <td>9:00 PM</td>
-      <td>
-
-    <a href="https://www.ticketfly.com/purchase/event/1697990">
-    <div style="height:100%;width:100%">
-      $10, 21+
-    </div>
-
-    </a>
-    </td>
-    </tr>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
     </table>
 
@@ -526,6 +300,9 @@ Michael turned to his favorite influences to find a musical backdrop for these e
 
       </div>
     </section>
+
+    <div></div>
+    <!-- Contact Section -->
 
 
 
